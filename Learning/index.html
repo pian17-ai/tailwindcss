@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Learning Tailwind</title>
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- FONT -->
+
+    <link rel="stylesheet" href="src/output.css">
+    <style>
+        /* * {
+            border: 1px solid red;
+        } */
+    </style>
 </head>
+
 <body>
-    
+    <h1 class="text-8xl font-bold text-center my-10">Semdang Belajar <span
+            class="bg-linear-to-r from-blue-700 to-blue-200 bg-clip-text text-transparent">Taildwindcss</span></h1>
+
+    <section class="mb-10 bg-indigo-200">
+        <h2 class="text-3xl text-center">Spacing</h2>
+        <div class="m-13 bg-red-200">Margin</div>
+        <div class="p-8 bg-red-200">padding</div>
+    </section>
+
+    <section class="mb-10 bg-green-300">
+        <h2 class="text-3xl text-center">Sizing</h2>
+        <div class="w-32 h-32 bg-yellow-200">Kotak 1</div>
+        <div class="w-32 h-32 bg-linear-to-b from-blue-500 to-red-500">kotak 2</div>
+    </section>
+
+    <section class="font-sans max-w-3xl mx-auto">
+        <h2 class="mb-1 text-4xl font-semibold font-ubuntu"><span
+                class="bg-gradient-to-r from-blue-400 from-20% via-purple-400 via-60% to-pink-400 bg-clip-text text-transparent">How
+                to win LKSN Web Technologies</span></h2>
+        <div class="mb-4 text-lg text-gray-600">By <a href="#" class="text-pian font-bold hover:underline">pian</a>,
+            Friday 25 Jul</div>
+        <p class="mb-4">Lorem ipsum dolor, sit amet <a href=""
+                class="underline font-semibold text-blue-700 hover:text-black">consectetur</a> adipisicing elit. Earum
+            sapiente similique unde dolorem
+            quas sint quibusdam, laboriosam, provident ipsa quae harum ad tempore ratione cumque! Vitae ipsa corrupti
+            sit quibusdam at tenetur suscipit officia dolorum, cumque quam maiores quia quas ad quod placeat temporibus
+            iure nisi harum magnam quo atque!</p>
+        <blockquote class="mb-4 italic font-extralight text-xl">"Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Commodi sed quaerat iste
+            ipsum in
+            reprehenderit consequatur. Harum voluptates quod minima!"</blockquote>
+        <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, aliquam sed. Aperiam numquam
+            consequuntur omnis at obcaecati quibusdam expedita, qui dignissimos tempora enim libero quas accusamus natus
+            ipsa eaque blanditiis.</p>
+    </section>
+
+    <div class="max-w-xl h-96 bg-red-400 mx-auto overflow-y-scroll bg-fixed"
+        style="background-image: url('https://raw.githubusercontent.com/pian17-ai/image/main/porsche/11.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <p class="p-5 text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sed quam praesentium
+            debitis nisi mollitia quos, quo pariatur necessitatibus ullam dolorem repellat nulla iste obcaecati, earum
+            laboriosam. Asperiores nisi optio maiores cum, blanditiis fuga voluptatem commodi voluptatibus, nemo harum
+            a. Ullam quasi doloremque voluptates necessitatibus esse ad, impedit similique fugiat eum tenetur vel
+            perferendis incidunt illo minus quos reiciendis dicta ea corporis expedita soluta eligendi sequi aperiam
+            aspernatur porro. Natus aspernatur nemo qui incidunt! Molestias pariatur, minus architecto excepturi sit
+            possimus ex. Recusandae voluptates similique, exercitationem dolorum autem inventore, aliquid officiis
+            adipisci quasi nostrum reiciendis aliquam alias saepe voluptatibus possimus esse rerum! Aperiam possimus
+            placeat, animi sapiente temporibus eius recusandae rerum! Sed architecto quibusdam necessitatibus tempora
+            officia dolore eligendi. Soluta nulla quo autem debitis accusamus itaque optio neque similique at eius
+            labore assumenda vero totam iste ratione dolor sed suscipit officia ullam, quisquam veritatis odio?
+            Blanditiis odit cumque accusamus iure iste, velit porro dolor perspiciatis debitis culpa tempore
+            necessitatibus veritatis maiores ratione alias reiciendis vel quia nam possimus dicta asperiores vitae quod.
+            Recusandae vitae nesciunt temporibus natus in veritatis cumque autem praesentium, est optio quia officia,
+            mollitia doloribus, eaque labore dolorum. Est ad laborum repudiandae! Aliquid saepe temporibus maiores
+            necessitatibus!</p>
+    </div>
+
+    <div
+        class="mt-32 max-w-xl mx-auto bg-gray-100 font-ubuntu font-semibold text-3xl bg-gradient-to-b from-red-600 via-gray-400 to-green-400 p-1 text-shadow-lg/30 bg-clip-text text-transparent">
+        Porsche</div>
+    <div class="max-w-xl mx-auto h-72 bg-red-800 bg-cover bg-center bg-no-repeat rounded-b-2xl shadow-xl shadow-red-500 overflow-hidden border-8 border-red-500"
+        style="background-image: url(https://raw.githubusercontent.com/pian17-ai/image/main/porsche/9.jpg);">
+        <div class="w-full h-9 m-auto bg-white/30 backdrop-blur-xs backdrop-saturate-200"></div>
+    </div>
+    <div class="m-96"></div>
+    <div class="container bg-cover bg-center w-full h-screen flex" style="background-image: url('https://raw.githubusercontent.com/pian17-ai/image/main/porsche/7.jpg');">
+        <nav class="backdrop-blur-xs shadow-xl/20 p-4 h-14 mx-auto mt-2">
+            <ul class="flex space-x-6 justify-center">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Itenerary</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">Prepare</a></li>
+                <li><a href="#">Our Team</a></li>
+                <button>Book Now</button>
+            </ul>
+        </nav>
+        <div class="">
+            <!-- <h1>Buy a Porsche</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, optio recusandae aliquid eligendi necessitatibus nihil nulla modi, similique unde est assumenda deleniti sed harum voluptatibus, fugit saepe nam inventore? Assumenda eaque molestiae accusamus quo similique minima. Inventore temporibus impedit maiores.</p> -->
+        </div>
+    </div>
 </body>
+
 </html>
