@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pian</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .fade-mask {
+            -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <nav class="fixed mt-4 left-1/2 transform -translate-x-1/2 flex px-8 py-4 w-[90%] items-center justify-between border rounded-xl backdrop-blur-[2px] border-white text-white z-50">
+        <a href="">Porsche</a>
+        <ul class="flex">
+            <li class="mx-4 hover:underline"><a href="#">Home</a></li>
+            <li class="mx-4 hover:underline"><a href="#">About</a></li>
+            <li class="mx-4 hover:underline"><a href="#">Blog</a></li>
+            <li class="mx-4 hover:underline"><a href="#">Car Tipe</a></li>
+        </ul>
+        <a href="" class="bg-gradient-to-l py-2 px-4 rounded-md from-orange-600 to-orange-400 duration-300 hover:shadow-md shadow-orange-600 hover:inset-shadow-2xs">Login/Register</a>
+    </nav>
+
+
+    <div class="w-full h-screen bg-cover bg-center fade-mask" style="background-image: url('https://raw.githubusercontent.com/pian17-ai/image/main/porsche/15.jpg');">
+        <div class="w-full h-full p-12 content-center text-white">
+            <div>
+                <h1 class="text-5xl font-bold">Welcome to Porsche Family</h1>
+                <p class="mt-6 max-w-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni distinctio nostrum, pariatur quisquam recusandae eos possimus iste illum fugiat magnam?</p>
+                <div class="mt-8">
+                    <a href="" class="px-4 py-3 rounded-md mx-2 shadow-xl bg-orange-400 duration-300 hover:bg-transparent hover:backdrop-blur-md hover:text-black">Contact</a>
+                    <a href="" class="px-4 py-3 rounded-md mx-2 shadow-xl bg-orange-400 duration-300 hover:bg-transparent hover:backdrop-blur-md hover:text-black">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-screen flex justify-center text-white">
+        <h1 class="mt-28 font-bold text-5xl">About Porsche</h1>
+    </div>
+</body>
+</html>

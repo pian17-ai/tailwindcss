@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    <nav class="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        /* * {
+            border: 1px solid red;
+        } */
 
-    </nav>
+        .fade-mask {
+            -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap');
+
+        .font-playwrite {
+            font-family: "Playwrite PL", cursive;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-700">
+    <div class="">
+        <nav
+            class="fixed mt-5 left-1/2 transform -translate-x-1/2 flex justify-between items-center w-[90%] px-8 py-4 rounded-2xl border text-white z-50">
+            <div
+                class="relative inline-block before:content[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-white before:transition-all before:duration-300 hover:before:w-full">
+                <a href="#">pian showroom</a>
+            </div>
+            <div class="">
+                <ul class="flex">
+                    <li
+                        class="px-4 relative inline-block before:content[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-white before:transition-all before:duration-300 hover:before:w-full">
+                        <a href="#">Home</a>
+                    </li>
+                    <li
+                        class="px-4 relative inline-block before:content[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-white before:transition-all before:duration-300 hover:before:w-full">
+                        <a href="#">About</a>
+                    </li>
+                    <li
+                        class="px-4 relative inline-block before:content[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-white before:transition-all before:duration-300 hover:before:w-full">
+                        <a href="#">Car List</a>
+                    </li>
+                    <li
+                        class="px-4 relative inline-block before:content[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-white before:transition-all before:duration-300 hover:before:w-full">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li
+                        class="px-4 relative inline-block before:content[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-white before:transition-all before:duration-300 hover:before:w-full">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="bg-gradient-to-r from-yellow-600 to-orange-600 rounded-md px-6 py-2">Buy Now</a>
+        </nav>
+        <div class="w-full h-screen bg-cover bg-center fade-mask"
+            style="background-image: url('https://raw.githubusercontent.com/pian17-ai/image/main/porsche/14.jpg');">
+            <!-- TEXT DIATAS -->
+             
+        </div>
+        <div class="w-full h-screen bg-gray-700"></div>
+    </div>
 </body>
+
 </html>
